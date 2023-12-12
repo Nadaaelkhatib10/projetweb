@@ -3,177 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ensak site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #877676;
-        }
+    <title>École Nationale Des Sciences Appliquées de Kénitra </title>
+    <link rel="stylesheet" href="monstyle.css" type="text/css">
 
-        header {
-    background-image: url(photooo/20160524_181912-scaled.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    height: 500px;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Aligne le contenu en bas du header */
-}
-
-nav {
-    background-color: #292525;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    transition: color 0.3s;
-}
-#conn{
-    border-radius: 10px;
-    background-color: rgb(194, 185, 173);
-    margin-left: 200px;
-    
-}
-#conn:hover{
-    transform: scale(2);
-    }
-
-    nav a:hover {
-        color: antiquewhite;
-    }
-
-       /* ... (autres styles) ... */
-
-/* ... (autres styles) ... */
-
-section {
-    padding: 20px;
-    overflow: hidden; /* Clearfix pour contenir les éléments flottants */
-}
-
-section h2,
-section h3 {
-    text-align: left; /* Alignement à gauche */
-}
-
-section p {
-    text-align: justify; /* Justification du texte à gauche */
-    margin-right: 200px; /* Espace à droite pour les images, ajustez selon vos besoins */
-}
-
-section img {
-    float: right;
-    margin-left: 20px; 
-}
-
-section h1{
-    font-size: xx-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif;
-}
-section h5{
-    transform: scale(1.2);
-}
-.cartes{
-    border-radius: 20px;
-    border:  1px solid #5c7eea;
-    display: inline-block;
-    margin: 5px;
-    width: 330px;
-    height: 150px;
-    
-}
-.cartes:hover{
-    transform: scale(1.2);
-    box-shadow: 2px 2px 5px #888888;
-}
-/* Conteneur qui englobe les images */
-.photos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Espace entre les colonnes */
-}
-
-/* Style pour chaque image */
-.icones {
-    width: 30%;
-    margin-bottom: 20px;
-    border-radius: 10px; /* Ajoutez la propriété border-radius */
-}
-.icones:hover{
-    transform: scale(1.2);
-}
-
-
-
-h3 {
-    margin-top: 10px;
-}
-
-
-    footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-#contact,
-#contact-form {
-    margin-bottom: 20px;
-}
-
-#contact {
-    float: left;
-    width: 50%;
-    text-align: left;
-}
-
-#contact-form {
-    float: right;
-    width: 50%;
-    text-align: left;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
-}
-
-form input,
-form textarea,
-form button {
-    margin-bottom: 10px;
-}
-@media screen and (max-width: 768px) {
-    #contact,
-    #contact-form {
-        float: none;
-        width: 100%;
-    }
-}
-    
-    </style>
 </head>
 <body>
 
@@ -185,18 +17,32 @@ form button {
         <a href="#a">Accueil</a> 
         <a href="#p">A propos</a> 
         <a href="#contact">Contact</a>
-        <a href="#" id="conn">Connexion</a>
-
-
+        <a href="#" id="connec"> Se connecter </a>
     </nav>
     <section>
-        <h1>Evenements à venir: </h1>
-        <div class="photos-container">
-            <img src="photooo/avis-1.png" class="icones" alt="Image 1">
-            <img src="photooo/avis-2.png" class="icones" alt="Image 2">
-            <img src="photooo/avis-3.png" class="icones" alt="Image 3">
-
+        <h1>ÉVÉNEMENTS </h1>
+        <div class="intro">
+        <p id="cen">Découvrez les événements captivants qui vous attendent à l'ENSA KENITRA et participez à des expériences uniques, rencontrez </p>
+            <p id="ce">des esprits créatifs et enrichissez votre parcours éducatif. Rejoignez-nous pour vivre l'éducation sous un nouvel angle !</p>
         </div>
+<div class="photos-container">
+    <div class="event">
+        <img src="photooo/avis-2.png" class="icones" alt="Image 1">
+        <a href="f.html">FORUM ENSAK ENTREPRISE</a>
+    </div>
+    <div class="event">
+        <img src="photooo/meca.png" class="icones" alt="Image 2">
+        <a href="#">JOURNEE NATIONALE DE LA MECATRONIQUE</a>
+    </div>
+    <div class="event">
+        <img src="photooo/ANARUZ.png" class="icones" alt="Image 3" id="bc">
+        <a href="#">KERMESSE</a>
+    </div>
+    
+</div>
+
+</div>
+
         
     </section>
 
@@ -207,6 +53,16 @@ form button {
         <p>Adresse : 123 Rue de l'École, Ville</p>
         <p>Téléphone : +123 456 789</p>
         <p>Email : info@ecole-ingenieurs.com</p>
+    </div>
+     
+        <div id="ser">   
+        <h3>Services numériques</h3>
+        <p>ENT</p>
+        <p>MOODLE</p>
+        <p>Bibliothèque</p>
+        <p>Recherche</p>
+        <p>CNOPS</p>
+        <p>Bourse</p>
     </div>
 
     <div id="contact-form">
@@ -224,8 +80,6 @@ form button {
             <button type="submit">Envoyer</button>
         </form>
     </div>
-
-    <p>&copy; 2023 ENSAK</p>
 </footer>
 </body>
 </html>
