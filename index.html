@@ -5,81 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>École Nationale Des Sciences Appliquées de Kénitra </title>
     <link rel="stylesheet" href="monstyle.css" type="text/css">
-
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <img src="photooo/cropped-ensak-logo.png" alt="logo de l'ensak" width="200px" >
+        <img src="photooo/cropped-ensak-logo.png" alt="logo de l'ensak" width="200px">
     </header>
 
     <nav>
         <a href="#a">Accueil</a> 
         <a href="#p">A propos</a> 
         <a href="#contact">Contact</a>
-        <a href="#" id="connec"> Se connecter </a>
+        <a href="#" id="connec">Se connecter</a>
     </nav>
+
     <section>
-        <h1>ÉVÉNEMENTS </h1>
+        <h1>ÉVÉNEMENTS</h1>
         <div class="intro">
-        <p id="cen">Découvrez les événements captivants qui vous attendent à l'ENSA KENITRA et participez à des expériences uniques, rencontrez </p>
+            <p id="cen">Découvrez les événements captivants qui vous attendent à l'ENSA KENITRA et participez à des expériences uniques, rencontrez </p>
             <p id="ce">des esprits créatifs et enrichissez votre parcours éducatif. Rejoignez-nous pour vivre l'éducation sous un nouvel angle !</p>
         </div>
-<div class="photos-container">
-    <div class="event">
-        <img src="photooo/avis-2.png" class="icones" alt="Image 1">
-        <a href="f.html">FORUM ENSAK ENTREPRISE</a>
-    </div>
-    <div class="event">
-        <img src="photooo/meca.png" class="icones" alt="Image 2">
-        <a href="#">JOURNEE NATIONALE DE LA MECATRONIQUE</a>
-    </div>
-    <div class="event">
-        <img src="photooo/ANARUZ.png" class="icones" alt="Image 3" id="bc">
-        <a href="#">KERMESSE</a>
-    </div>
-    
-</div>
 
-</div>
+        <div class="photos-container">
+            <div class="event" onclick="showImage(1)">
+                <img src="photooo/avis-2.png" class="icones" alt="Image 1">
+                <a href="f.html">FORUM ENSAK ENTREPRISE</a>
+            </div>
+            <div class="event" onclick="showImage(2)">
+                <img src="photooo/meca.png" class="icones" alt="Image 2">
+                <a href="#">JOURNEE NATIONALE DE LA MECATRONIQUE</a>
+            </div>
+            <div class="event" onclick="showImage(3)">
+                <img src="photooo/ANARUZ.png" class="icones" alt="Image 3" id="bc">
+                <a href="#">KERMESSE</a>
+            </div>
+        </div>
 
-        
+        <div id="imageViewer">
+            <img id="displayedImage" src="" alt="Displayed Image">
+            <span id="closeViewer" onclick="closeViewer()">Close</span>
+            <span id="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span id="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
     </section>
 
-
-<footer>
-    <div id="contact">
-        <h3>Contactez-nous</h3>
-        <p>Adresse : 123 Rue de l'École, Ville</p>
-        <p>Téléphone : +123 456 789</p>
-        <p>Email : info@ecole-ingenieurs.com</p>
-    </div>
-     
+    <footer>
+        <div id="contact">
+            <h3>Contactez-nous</h3>
+            <p>Adresse : 123 Rue de l'École, Ville</p>
+            <p>Téléphone : +123 456 789</p>
+            <p>Email : info@ecole-ingenieurs.com</p>
+        </div>
+        
         <div id="ser">   
-        <h3>Services numériques</h3>
-        <p>ENT</p>
-        <p>MOODLE</p>
-        <p>Bibliothèque</p>
-        <p>Recherche</p>
-        <p>CNOPS</p>
-        <p>Bourse</p>
-    </div>
+            <h3>Services numériques</h3>
+            <p>ENT</p>
+            <p>MOODLE</p>
+            <p>Bibliothèque</p>
+            <p>Recherche</p>
+            <p>CNOPS</p>
+            <p>Bourse</p>
+        </div>
 
-    <div id="contact-form">
-        <h3>Envoyez-nous un message</h3>
-        <form action="process_contact_form.php" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+        <div id="contact-form">
+            <h3>Envoyez-nous un message</h3>
+            <form action="process_contact_form.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Envoyer</button>
-        </form>
-    </div>
-</footer>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
